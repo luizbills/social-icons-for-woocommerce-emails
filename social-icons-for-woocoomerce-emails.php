@@ -2,7 +2,7 @@
 /*
 Plugin Name: Social Icons for WooCoomerce Emails
 Description: Add social icons on footer of your emails.
-Version: 1.0.1
+Version: 1.0.0
 Author: Luiz Bills
 Author URI: https://profiles.wordpress.org/luizbills
 License: GPLv2 or later
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die; // Exit if accessed directly
 }
 
-define( 'SIWCE_PLUGIN_NAME', 'social-icons-for-wc-emails' );
+define( 'SIWCE_PLUGIN_NAME', 'social-icons-for-woocoomerce-emails' );
 
 require 'inc/plugin_helpers.php';
 require 'inc/plugin_functions.php';
