@@ -5,7 +5,7 @@
 # main config
 PLUGINSLUG="social-icons-for-woocoomerce-emails"
 CURRENTDIR=`pwd`
-MAINFILE="social-icons-for-woocommerce-emails.php" # this should be the name of your main php file in the wordpress plugin
+MAINFILE="$PLUGINSLUG.php" # this should be the name of your main php file in the wordpress plugin
 
 # git config
 GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
@@ -35,7 +35,7 @@ NEWVERSION1=`grep "^Stable tag:" $GITPATH/readme.txt | awk -F' ' '{print $NF}'`
 echo "readme.txt version: $NEWVERSION1"
 NEWVERSION2=`grep "^Version:" $GITPATH/$MAINFILE | awk -F' ' '{print $NF}'`
 echo "$MAINFILE version: $NEWVERSION2"
-NEWVERSION3=`grep "^define('WPSP_PLUGIN_VERSION'" $GITPATH/wordpress-sparkpost.php | awk -F"'" '{print $4}'`
+NEWVERSION3=`grep "^define( 'SIWCE_PLUGIN_VERSION'" $GITPATH/$MAINFILE | awk -F"'" '{print $4}'`
 echo "$MAINFILE version constant : $NEWVERSION3"
 
 if [[ "$NEWVERSION1" != "$NEWVERSION2" || "$NEWVERSION2" != "$NEWVERSION3" ]]; then
