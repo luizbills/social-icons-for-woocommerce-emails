@@ -3,7 +3,7 @@ Contributors: luizbills
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QF4ZNK6K3TXW
 Requires at least: 4.4
 Tested up to: 4.7
-Stable tag: 2.0.2
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: woocommerce, email, social, links, footer
@@ -35,20 +35,23 @@ Github: https://github.com/luizbills/social-icons-for-woocommerce-emails
 Yes. Use the filter hook `siwce_social_links`.
 
 Example:
-`// add this to your functions.php
+
+```
+// add this to your functions.php
 add_filter( 'siwce_social_links', 'yourprefix_add_vk_wc_emails' );
 function yourprefix_add_vk_wc_emails( $icons ) {
 	$icons['vk'] = 'VK';
 	return $icons;
 }
-`
+```
 
 = How I can add/change an icon image? =
 
 Use the filter hook `siwce_icon_image_uri`.
 
 Example:
-`// add this to your functions.php
+```
+// add this to your functions.php
 add_filter( 'siwce_icon_image_uri', 'yourprefix_change_facebook_icon', 10, 2 );
 function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 	if ( $icon_id == 'facebook' ) {
@@ -56,7 +59,7 @@ function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 	}
 	return $uri;
 }
-`
+```
 
 == Screenshots ==
 
@@ -66,7 +69,7 @@ function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 
 == Changelog ==
 
-= 2.0.2 =
+= 2.0.4 =
 * updated banner and icon
 
 = 2.0 =

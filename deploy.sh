@@ -79,6 +79,8 @@ git checkout-index -a -f --prefix=$SVNPATH/trunk/
 echo "Exporting the assets"
 git checkout-index -f --prefix=$SVNPATH/ assets/*
 
+rm -rf $SVNPATH/trunk/assets
+
 echo "Ignoring github specific files and deployment script"
 svn propset svn:ignore "deploy.sh
 assets
