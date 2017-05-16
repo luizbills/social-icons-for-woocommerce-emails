@@ -2,8 +2,8 @@
 Contributors: luizbills
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QF4ZNK6K3TXW
 Requires at least: 4.4
-Tested up to: 4.5.3
-Stable tag: 1.0.0
+Tested up to: 4.7
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: woocommerce, email, social, links, footer
@@ -26,7 +26,7 @@ Go to WooCoomerce > Settings > Emails to configure the plugin.
 
 = How I can add/remove social networks? =
 
-Using the filter `siwce_social_links`.
+Yes. Use the filter hook `siwce_social_links`.
 
 Example:
 `// add this to your functions.php
@@ -37,9 +37,9 @@ function yourprefix_add_vk_wc_emails( $icons ) {
 }
 `
 
-= How I can add/change the icon image? =
+= How I can add/change an icon image? =
 
-Using the filter `siwce_icon_image_uri`.
+Use the filter hook `siwce_icon_image_uri`.
 
 Example:
 `// add this to your functions.php
@@ -59,6 +59,11 @@ function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 2. WooCoomerce > Settings > Emails page
 
 == Changelog ==
+
+= 2.0 =
+* feature: option to add a text before of the icons.
+* feature: simplified the size of icons (now is just 1 option, instead of two)
+* feature: translated to pt-BR
 
 = 1.0 =
 * Initial release.
