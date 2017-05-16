@@ -76,7 +76,8 @@ rm -rf $SVNPATH/assets/*
 
 echo "Exporting the HEAD of master from git to the trunk of SVN"
 git checkout-index -a -f --prefix=$SVNPATH/trunk/
-git checkout-index -a -f --prefix=$SVNPATH/ assets/*
+echo "Exporting the assets"
+git checkout-index -f --prefix=$SVNPATH/ assets/*
 rm -rf $SVNPATH/trunk/assets
 
 echo "Ignoring github specific files and deployment script"
