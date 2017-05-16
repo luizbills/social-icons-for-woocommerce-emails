@@ -65,7 +65,6 @@ echo "Pushing latest commit to origin, with tags"
 git push origin master
 git push origin master --tags
 
-
 echo "Creating local copy of SVN repo ..."
 if [ -d $SVNPATH ]; then rm -rf $SVNPATH; fi
 svn co $SVNURL $SVNPATH
@@ -76,12 +75,13 @@ rm -rf $SVNPATH/assets/*
 
 echo "Exporting the HEAD of master from git to the trunk of SVN"
 git checkout-index -a -f --prefix=$SVNPATH/trunk/
+
 echo "Exporting the assets"
 git checkout-index -f --prefix=$SVNPATH/ assets/*
-rm -rf $SVNPATH/trunk/assets
 
 echo "Ignoring github specific files and deployment script"
 svn propset svn:ignore "deploy.sh
+assets
 README.md
 .git
 .gitignore" "$SVNPATH/trunk/"
