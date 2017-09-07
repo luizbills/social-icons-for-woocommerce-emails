@@ -69,6 +69,9 @@ function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 
 == Changelog ==
 
+= 2.0.4 =
+* compatibility with woocommerce pre-update extension version check
+
 = 2.0.3 =
 * updated banner and icon
 
