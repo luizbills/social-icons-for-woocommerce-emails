@@ -2,9 +2,9 @@
 Contributors: luizbills
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QF4ZNK6K3TXW
 Requires at least: 4.0
-Tested up to: 4.7
-Stable tag: 2.0.4
-License: GPLv2 or later
+Tested up to: 5.6
+Stable tag: 2.1.0
+License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: woocommerce, email, social, links, footer
 
@@ -38,8 +38,8 @@ Example:
 
 ```
 // add this to your functions.php
-add_filter( 'siwce_social_links', 'yourprefix_add_vk_wc_emails' );
-function yourprefix_add_vk_wc_emails( $icons ) {
+add_filter( 'siwce_social_links', '__add_vk_wc_emails' );
+function __add_vk_wc_emails( $icons ) {
 	$icons['vk'] = 'VK';
 	return $icons;
 }
@@ -68,6 +68,10 @@ function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 2. WooCoomerce > Settings > Emails page
 
 == Changelog ==
+
+= 2.1.0 =
+* removed Google+ support, since it not exists anymore
+* changed plugin license to GNU General Public License v3.0
 
 = 2.0.4 =
 * compatibility with woocommerce pre-update extension version check

@@ -6,7 +6,6 @@ function siwce_get_icon_list () {
 		'instagram' => 'Instagram',
 		'twitter' => 'Twitter',
 		'youtube' => 'Youtube',
-		'google_plus' => 'Google+',
 		'linkedin' => 'LinkedIn',
 		'pinterest' => 'Pinterest'
 	) );
