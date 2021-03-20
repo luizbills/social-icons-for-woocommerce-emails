@@ -101,7 +101,6 @@ function siwce_social_icons_settings( $settings ) {
 	);
 
 	foreach($icons as $id => $name) {
-		$title =
 		$settings[] = array(
 			'title' => sprintf( __( '%s URL',  'siwce' ), $name ),
 			'id' => 'siwce_url_' . $id,
