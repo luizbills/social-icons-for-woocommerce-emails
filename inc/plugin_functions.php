@@ -38,12 +38,12 @@ function siwce_email_social_icons ( $footer_content ) {
 		foreach ( $icons as $icon ) :
 		?>
 
-						<td valign="middle" id="siwce_icon_<?php echo $icon['name']; ?>">
-							<a href="<?php echo $icon['href']; ?>" title="<?php echo $icon['name']; ?>"><img
-								alt="<?php echo $icon['name']; ?>"
-								src="<?php echo $icon['image_src']; ?>"
-								width="<?php echo $img_size; ?>"
-								height="<?php echo $img_size; ?>" /></a>
+						<td valign="middle" id="siwce_icon_<?php echo esc_attr( $icon['name'] ); ?>">
+							<a href="<?php echo esc_url( $icon['href'] ); ?>" title="<?php echo $icon['name']; ?>"><img
+								alt="<?php echo esc_attr( $icon['name'] ); ?>"
+								src="<?php echo esc_attr( $icon['image_src'] ); ?>"
+								width="<?php echo esc_attr( $img_size ); ?>"
+								height="<?php echo esc_attr( $img_size ); ?>" /></a>
 						</td>
 
 		<?php

@@ -2,10 +2,10 @@
 Contributors: luizbills
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QF4ZNK6K3TXW
 Requires at least: 4.0
-Tested up to: 5.7
-Stable tag: 2.1.0
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 6.0
+Stable tag: 2.1.1
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: woocommerce, email, social, links, footer
 
 Add social icons to your WooCommerce emails.
@@ -68,6 +68,10 @@ function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 2. WooCoomerce > Settings > Emails page
 
 == Changelog ==
+
+= 2.1.1 =
+* Some fixes
+* Bump Tested up to
 
 = 2.1.0 =
 * removed Google+ support, since it not exists anymore

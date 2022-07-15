@@ -20,9 +20,9 @@ function siwce_get_used_icons () {
 		if ( empty( $href ) ) continue;
 
 		$icons[] = array(
-			'href' => esc_url( $href ),
-			'image_src' => esc_url( siwce_get_icon_image_uri( $id ) ),
-			'name' => esc_attr( $name )
+			'href' => $href,
+			'image_src' => siwce_get_icon_image_uri( $id ),
+			'name' => $name
 		);
 	}
 
@@ -34,5 +34,5 @@ function siwce_get_icon_image_uri ( $id ) {
 }
 
 function siwce_get_icon_default_size () {
-	return esc_attr( apply_filters( 'siwce_icon_default_size', 48 ) );
+	return apply_filters( 'siwce_icon_default_size', 48 );
 }
