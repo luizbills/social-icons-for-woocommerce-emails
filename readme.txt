@@ -1,6 +1,6 @@
 === Social Icons for WooCoomerce Emails ===
 Contributors: luizbills
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QF4ZNK6K3TXW
+Donate link: https://luizpb.com/donate
 Requires at least: 4.0
 Tested up to: 6.0
 Stable tag: 2.1.1
