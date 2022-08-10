@@ -36,30 +36,26 @@ Yes. Use the filter hook `siwce_social_links`.
 
 Example:
 
-```
-// add this to your functions.php
+`// add this to your functions.php
 add_filter( 'siwce_social_links', '__add_vk_wc_emails' );
 function __add_vk_wc_emails( $icons ) {
 	$icons['vk'] = 'VK';
 	return $icons;
-}
-```
+}`
 
 = How I can add/change an icon image? =
 
 Use the filter hook `siwce_icon_image_uri`.
 
 Example:
-```
-// add this to your functions.php
+`// add this to your functions.php
 add_filter( 'siwce_icon_image_uri', 'yourprefix_change_facebook_icon', 10, 2 );
 function yourprefix_change_facebook_icon( $uri, $icon_id ) {
 	if ( $icon_id == 'facebook' ) {
 		$uri = get_stylesheet_directory_uri() . '/path/to/your/facebook_icon.png';
 	}
 	return $uri;
-}
-```
+}`
 
 == Screenshots ==
 
