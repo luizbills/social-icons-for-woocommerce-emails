@@ -48,6 +48,7 @@ function __add_vk_wc_emails( $icons ) {
 Use the filter hook `siwce_icon_image_uri`.
 
 Example:
+
 `// add this to your functions.php
 add_filter( 'siwce_icon_image_uri', 'yourprefix_change_facebook_icon', 10, 2 );
 function yourprefix_change_facebook_icon( $uri, $icon_id ) {
